@@ -1,6 +1,7 @@
 import Knex from 'knex';
 
-export default async function seed(knex: Knex) {
+// eslint-disable-next-line import/prefer-default-export
+export async function seed(knex: Knex) {
   await knex('items').insert([
     { title: 'Lâmpadas', image: 'lampadas.svg' },
     { title: 'Pilhas e Baterias', image: 'baterias.svg' },
